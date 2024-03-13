@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <script>
+            // Calculadora dinâmica
+            alert('CALCULADORA DINAMICA');
+            var numeroInicial = prompt('Informe o primeiro número...');
+            
+            var sinal = prompt('Informe o sinal da sua operação');            
+                while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'  ){
+                    alert('Insira um sinal operador válido!');
+                    sinal = prompt('Informe o sinal da sua operação');
+                }
+
+            var numeroFinal = prompt('Insira o segundo número...');
+            
+            //Função para converter string p/ numero
+            numeroInicial = parseInt(numeroInicial);
+            numeroFinal=parseInt(numeroFinal);
+            
+            var resultadoFinal = 0;
+            if (sinal == '+') {
+                resultadoFinal = numeroInicial + numeroFinal;
+            }else if(sinal == '-'){
+                resultadoFinal = numeroInicial - numeroFinal;
+            }else if(sinal == '/'){
+                resultadoFinal = numeroInicial / numeroFinal;
+            }else if(sinal == '*'){
+                resultadoFinal = numeroInicial * numeroFinal;
+            }
+        
+            alert('O resultado final é: '+ resultadoFinal);
+
+
+
+        </script>
+    </body>
+</html>

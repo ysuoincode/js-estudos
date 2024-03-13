@@ -1,0 +1,57 @@
+<html>    
+<body>
+<script>
+    
+    //Funções 
+    function testes(){
+        console.log('chamando função testes');
+    }
+
+    //Função com Parâmetro
+    function teste2(nome){
+        console.log('O nome passado foi: ' + nome);
+    }
+
+    teste2('guilherme');
+    teste2('João');
+    
+    //Função com mais de um Parâmetro
+    function teste3(nome,idade){
+        console.log('O nome passado foi : '+nome);
+        console.log('A idade passada foi: '+idade);
+    }
+
+    teste3('vitor', 21);
+
+    //Função com return
+    function pegarNome(){
+        return 'Guilherme';
+    }
+    var nome = pegarNome();
+
+    function pegarNome(parametro){
+        if(parametro == 1){
+            return 'Guilherme';
+        } else{
+            return 'Outro nome';
+        }
+    }
+
+    var nome = pegarNome(2132131321);
+    console.log(nome);
+
+    // Continuação de funções, como declarar uma função de outra forma. 
+
+    var func = function(){
+        alert('Olá Mundo');
+    }
+
+    func();
+    // declarar a função e logo dps chamar ela.b
+    (function(){
+        alert('Olá Mundo!');
+    })();
+
+</script>
+</body> 
+</html>

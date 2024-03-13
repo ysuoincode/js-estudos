@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>
+            function calcularIdade(anoAtual,anoNascimento){
+                return anoAtual - anoNascimento;
+            }
+
+            var anoNascimento = prompt('Seu ano de nascimento: ');
+            
+            while(anoNascimento >=2024){
+                alert('Insira o ano corretamente!');
+                anoNascimento = prompt('Seu ano de nascimento: ');
+            }
+
+            var anoAtual = prompt('Ano em que estamos: ');
+            var idade = alert('Sua idade é: '+ calcularIdade(anoAtual,anoNascimento)); 
+
+        </script>
+    </body>
+</html>
