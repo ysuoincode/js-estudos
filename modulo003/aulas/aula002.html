@@ -1,7 +1,76 @@
 <html>
     <body>
         <script>
+
+            /*
+            //Funções e Instâncias pt.1
+            function Pessoa(){
+                this.nome = 'Moisés';
+                //this está atribuindo ATRIBUTOS a esse objeto.
+            }
+            var pessoa = new Pessoa();
+            // É possível editar o valor desses atributos
+            pessoa.nome = 'Alex';
+            alert(pessoa.nome); 
+
+            //Funções e Instâncias pt.2
+            function Pessoa(){
+                this.nome = 'Moisés';
+                this.idade = 22;
+                //também é possível por uma função com atributo de um objeto
+                this.printNome = function(nome){
+                    alert(nome);
+                };
+            }
+            var pessoa = new Pessoa();
+            var pessoa_2 = new Pessoa();
+            pessoa_2.nome = "Nando";
+            pessoa.printNome(pessoa_2.nome);
+
+            //Criando outro objeto
+            function Animal(nome,peso){
+                if(nome == undefined){
+                    nome = 'cachorro';
+                }
+                if(peso == undefined){
+                    peso = '5kg';
+                }
+                this.nome = nome;
+                this.peso = peso;
+            }
+
+            animal = new Animal('cachorro','12kg');
+
+            animal2 = new Animal('gato','6kg');
             
-        </script>
+            alert(animal.nome);
+            alert(animal2.nome);
+            */
+
+            function Pessoa(){
+                this.nome = 'Moisés';
+                this.idade = 22;
+                this.printNome = function(nome){
+                    alert(nome);
+                };
+                this.returnAnimal = function(animal){
+                    return animal;
+                }
+            }
+            
+            function Animal(){
+                this.nome = 'cachorro';
+                this.raca = 'bulldog';
+            }
+            
+
+            var pessoa = new Pessoa();
+            var animal = new Animal();
+
+            animal.raca = 'Maltes';
+
+            alert(pessoa.returnAnimal(animal).raca);
+
+       </script>
     </body>
 </html>
