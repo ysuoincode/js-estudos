@@ -2,7 +2,27 @@
     <body>
         <script>
             //CLasses
-            
+
+            class Animal{
+                constructor(nome){
+                this.nome = 'cachorro';
+                }
+                // Em Orientação a Obj. chama-se método não função.
+                printNome(){
+                    return this.nome;
+                }
+            }
+            // Extends serve para classe anterior a ele, herdar atributos da classe definida posterior a ele. 
+            class Cachorro extends Animal{
+                constructor(nome){
+                    // o super serve para invocar o construtor da classe PAI.
+                    super(nome);
+                    this.raca = "bulldog"
+                }
+            }
+
+            cachorro = new Cachorro('Maltes');
+            alert (cachorro.printNome());
         </script>
     </body>
 </html>
