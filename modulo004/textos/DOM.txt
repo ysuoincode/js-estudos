@@ -1,0 +1,4 @@
+=>  DOM - Document Object Model
+    É uma forma de representação do documento(página web);
+    Através do JS conseguimos acessar o DOM e manipular nosso documento;
+
