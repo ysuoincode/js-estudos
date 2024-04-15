@@ -1,4 +1,16 @@
-=>  DOM - Document Object Model
-    É uma forma de representação do documento(página web);
-    Através do JS conseguimos acessar o DOM e manipular nosso documento;
+=> DOM - Document Object Model
+    -> É uma forma de representação do documento(página web);
+    -> Através do JS conseguimos acessar o DOM e manipular nosso documento;
+
+=> O que podemos acessar pelo DOM?
+    -> Document
+    -> Node: um nó de algum objeto
+    -> Elemento: divs, p, span, etc...
+
+=> Como manipular o DOM? 
+    -> Funções do próprio JS, direto do navegador:
+        - getElementById(), querySelector(), e etc...
+
+    -> DOM != JavaScript 
+        - É importante falar que o DOM é uma fora de representar o documento e não se limita apenas a JavaScript;
 
