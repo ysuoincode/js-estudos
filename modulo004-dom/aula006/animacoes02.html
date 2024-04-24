@@ -1,0 +1,63 @@
+
+<html>
+<body>
+    <style>
+        .conteudo h2 span{
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo p{
+            overflow: hidden;
+            height: 10px;
+            transition: 1s;
+        }
+
+        .mostrar{
+            height: 200px !important;
+        }
+
+    </style>
+    <div class="conteudo">
+        <h2>Título do Conteúdo <span>Ver mais!</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iusto doloribus fugit at, provident beatae facilis nobis tempore repudiandae sed, voluptatibus reiciendis modi. Soluta, nemo ratione perspiciatis iusto amet unde! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet saepe exercitationem laborum commodi recusandae voluptas. Fugiat maxime quibusdam minus. Vero dolores eius cupiditate ullam cum, officia quo. Id, cupiditate nulla.</p>
+    </div>
+    <script>
+
+    var span = document.querySelector('.conteudo span');
+    span.addEventListener('click',()=>{
+        var conteudo = document.querySelector('.conteudo p');
+        
+        if(conteudo.classList.contains('mostrar')){
+            span.innerHTML='Ver Mais!';
+            conteudo.classList.remove('mostrar');
+            alert('Esconda o conteudo');
+        }else{
+            span.innerHTML='Ocultar!';
+            alert('Mostra o conteudo');
+            conteudo.classList.add('mostrar');
+        };
+    });
+
+    /*Solução para aplicar em vários desses:
+    
+    var spans = document.querySelectorAll('.conteudo span');
+    spans.forEach(function(span) {
+        span.addEventListener('click', function() {
+            var conteudo = this.parentElement.nextElementSibling;
+            if (conteudo.classList.contains('mostrar')) {
+                this.innerHTML = 'Ver mais!';
+                conteudo.classList.remove('mostrar');
+            } else {
+                this.innerHTML = 'Ocultar';
+                conteudo.classList.add('mostrar');
+            }
+            });
+        });
+    */
+
+
+
+    </script>    
+</body>
+</html>
