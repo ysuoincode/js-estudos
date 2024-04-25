@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<body>
+    <script>
+    // fazendo a requisição
+        var request = new XMLHttpRequest();
+        request.open('GET','https://jsonplaceholder.typicode.com/todos/1',true);
+
+        request.onload = ()=>{
+            if(this.status >= 200 && this.status < 400){
+                //request foi um sucesso
+                var data = JSON.parse(this.response);
+                alert(data);
+            }else{
+                //erro...
+            }
+        }
+    //testando ela se não deu algum erro
+        request.onerror = ()=>{
+
+        }   
+    //enviando requisição
+        request.send();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+AJAX
+- Assynchronous Javascript and XML;
+- Requisições depois da página ter finalizado seu carregamento;
+- Não é necessário atualizar a página.
+
+Como utilizar? 
+- Através de Funções do JS;
+    Fetch(), XMLHttpRequest(), etc...
