@@ -6,11 +6,16 @@ h1{
     display: flex;
 }
 
+.player-options{
+
+}
+
 .player-options img,
 .enemy-options img{
     max-width: 200px;
     opacity: 0.3;
 }
+
 .player-options img:hover{
     opacity: 1;
     cursor: pointer;
